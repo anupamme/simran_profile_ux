@@ -1,38 +1,97 @@
 # simranchopra.com — UX Researcher portfolio
 
-A static multi-page site with no framework and no build step. Every page is a real URL (e.g. `/work/samsung/`), so links preview properly when shared and search engines can index the content. It replaces the AngularJS hash-routed site in `../simran_profile/`, which is left untouched.
+A static multi-page site. Every page is a real URL (e.g. `/work/samsung/`), so links preview properly when shared and search engines can index the content.
+
+Case studies are written in **Markdown** and built into HTML by a small Node script. Every other page is plain hand-written HTML. GitHub Actions runs the build on every push and deploys to GitHub Pages at simranchopra.com.
 
 ## Structure
 
-| Path | Page |
+| Path | What it is |
 |---|---|
-| `index.html` | Home: hero, proof bar, case-study cards, "What I bring", beyond-research teaser |
-| `work/<slug>/index.html` | Case studies, in this order: `samsung`, `inito`, `gates-records-for-life`, `cookup`, `exchangeopoly`, `mosaic`, `soil-stories` |
-| `about/` | About, written for an industry audience; theory appears here only |
-| `cv/` | Industry CV (content from `SC_CV.pdf`), print-ready, plus `cv/simran-chopra-cv.pdf` |
-| `beyond/` | Poems, community work, earlier art and food projects |
+| `content/work/<slug>.md` | **Case-study content — edit these.** One file per case study |
+| `templates/case-study.html` | The page shell every case study is built into |
+| `build.js` | Turns each `.md` into `work/<slug>/index.html` (`npm run build`) |
+| `work/<slug>/index.html` | Generated output. It's gitignored, so don't edit it |
+| `index.html` | Home: hero, proof bar, case-study cards, "What I bring", beyond research |
+| `about/`, `cv/`, `beyond/` | Hand-written HTML pages. `cv/` also has `simran-chopra-cv.pdf` |
 | `css/site.css` | The only stylesheet. Colour tokens are at the top; dark mode is automatic |
 | `js/nav.js` | Mobile menu toggle, the only script |
+| `.github/workflows/pages.yml` | On every push to `main`, builds and deploys the site |
 | `404.html`, `CNAME` | For GitHub Pages |
 
-Every case study uses the same section order: **The question → My role → Methods → Who I worked with → Key insights → Impact → Artifacts**. To add a case study, copy a folder in `work/` and update the "Previous/Next" links at the bottom of the neighbouring pages and the card on the home page.
+## Editing a case study
 
-## Run locally
+1. Open `content/work/<slug>.md` and edit the text. You can do this directly in GitHub's web editor.
+2. Commit and push to `main`. The site rebuilds and goes live in about a minute (check the repo's **Actions** tab).
+
+To preview locally first:
 
 ```sh
-# from the parent folder (/Users/admin/code/sim)
-python3 -m http.server -d simran_profile_ux 8000
-# or from inside simran_profile_ux/
-python3 -m http.server 8000
-# then open http://localhost:8000
+cd simran_profile_ux
+npm install          # first time only
+npm run build        # regenerates work/*/index.html
+python3 -m http.server 8000   # then open http://localhost:8000/work/inito/
 ```
+
+If something is wrong, for example a missing image or a required field, the build stops and names the file and the problem.
+
+### The Markdown format
+
+Each file has a **front-matter** block between `---` lines for the page header, then the body sections:
+
+```md
+---
+order: 2                          # position in the Previous/Next chain
+page_title: Inito Fertility Monitor     # browser tab: "… | Simran Chopra"
+short_name: Inito Fertility Monitor     # used in link previews and Previous/Next links
+description: "Case study: …"            # search and link-preview description
+og_description: …                       # optional, a different link-preview line
+eyebrow: Inito Health Inc., via Samplytics · 2014–17   # small line above the title
+title: Redesigning onboarding … to 89% task completion
+lede: End-to-end research for …
+types: [Evaluative]               # the "Type" chips
+meta:                             # the row of facts under the lede
+  - label: My role
+    value: Design Research Consultant …
+  - label: Result
+    value: "**89%** task completion on the redesigned onboarding"
+hero_quote: Can someone set up a medical diagnostics device at home …?
+# …or a photo instead of the quote:
+# hero_image: { src: rfl-3.jpg, alt: Describe the photo, caption: Shown under it }
+methods: [In-home usability testing, Task analysis]   # chips in the Methods section
+---
+
+## The question
+Plain Markdown paragraphs, **bold**, [links](https://example.com) and lists all work.
+
+## Key insights
+> A line starting with ">" becomes the large highlighted insight.
+
+## Artifacts
+![Alt text describing the photo](rfl-1.jpg "Caption shown under the photo")
+![Second photo, on the very next line, sits beside the first](rfl-b1.jpg "Caption")
+```
+
+Rules:
+- **Sections:** every `## Heading` becomes a section, in file order. You can rename, reorder or add headings freely; MoSaIC uses `## Stakeholders & influence`.
+- **Methods:** the `methods` chips appear at the top of the `## Methods` section, and any text under that heading follows them.
+- **TODOs:** `[TODO]` or `[TODO: note]` anywhere becomes a yellow chip.
+- **Images:** a bare file name like `rfl-1.jpg` means `images/work/rfl-1.jpg`. Images on consecutive lines form a two-across gallery, and the quoted text becomes the caption.
+- **Quoting:** wrap a YAML value in quotes if it contains a colon (`:`) or starts with `[` or `*`, e.g. `value: "C&C 2025 [TODO: paper title]"`.
+
+### Adding a new case study
+
+1. Copy an existing `.md` in `content/work/` to `content/work/<new-slug>.md` and give it an `order`. Previous/Next links update automatically.
+2. Add any images to `images/work/`, resized with `sips -Z 1600 file.jpg`.
+3. Add its card to the "Selected case studies" grid in `index.html`. The cards are hand-written.
 
 ## TODOs before launch
 
-Anything Simran still needs to supply or verify is marked with `<span class="todo">TODO…</span>`, which shows as a yellow chip. To list them all:
+Anything Simran still needs to supply or verify is marked `[TODO…]` in the Markdown, or `<span class="todo">` in the HTML pages, and shows as a yellow chip. To list them:
 
 ```sh
-grep -rno 'TODO[^<"]*' --include='*.html' simran_profile_ux
+grep -rn 'TODO' content/work/*.md
+grep -rno 'class="todo">[^<]*' index.html about cv beyond
 ```
 
 The main gaps:
@@ -42,23 +101,19 @@ The main gaps:
 - **CookUp** Beta numbers; **Inito** onboarding baseline, if known.
 - **Images** for Exchangeopoly and Soil Stories.
 
-Before going live, either remove the markers or uncomment the `.todo { display: none }` line at the top of `css/site.css`.
+To hide every chip without removing them, uncomment the `.todo { display: none }` line at the top of `css/site.css`.
 
 ## Exporting the CV PDF
 
-Edit `cv/index.html`, then regenerate the PDF:
+Edit `cv/index.html`, serve locally, then regenerate the PDF:
 
 ```sh
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --no-pdf-header-footer \
-  --print-to-pdf=simran_profile_ux/cv/simran-chopra-cv.pdf http://localhost:8000/cv/
+  --print-to-pdf=cv/simran-chopra-cv.pdf http://localhost:8000/cv/
 ```
 
-(Or open `/cv/` in a browser → Print → Save as PDF, with A4 and no margins.) The print styles hide the site chrome and fit the CV on one A4 page.
-
-## Images
-
-These are a subset of `../simran_profile/images/`, resized to at most 1600px. To add an image, put it in `images/work/` or `images/beyond/` and resize it with `sips -Z 1600 file.jpg`.
+Or open `/cv/` in a browser, choose Print, then Save as PDF. The print styles hide the site chrome and lay the CV out on A4.
 
 ## Deploy
 
-Push the contents of this folder to the GitHub Pages repo (or point Pages at it). The `CNAME` keeps `simranchopra.com`.
+Pushing to `main` deploys automatically through `.github/workflows/pages.yml`. The repo's Pages source is set to **GitHub Actions**, and the custom domain `simranchopra.com` is set in the repo's Pages settings.
