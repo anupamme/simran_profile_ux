@@ -136,7 +136,7 @@ pages.forEach((p, i) => {
     slug: p.slug,
     page_title: escapeHtml(d.page_title),
     description: escapeHtml(d.description),
-    og_title: escapeHtml(`${d.short_name} — Simran Chopra, UX Researcher`),
+    og_title: escapeHtml(`${d.short_name} | Simran Chopra, UX Researcher`),
     og_description: escapeHtml(d.og_description || d.description),
     og_image: d.hero_image ? `  <meta property="og:image" content="https://simranchopra.com/images/work/${escapeHtml(d.hero_image.src)}">\n` : '',
     eyebrow: inline(d.eyebrow),

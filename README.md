@@ -1,4 +1,4 @@
-# simranchopra.com — UX Researcher portfolio
+# simranchopra.com: UX Researcher portfolio
 
 A static multi-page site. Every page is a real URL (e.g. `/work/samsung/`), so links preview properly when shared and search engines can index the content.
 
@@ -8,7 +8,7 @@ Case studies are written in **Markdown** and built into HTML by a small Node scr
 
 | Path | What it is |
 |---|---|
-| `content/work/<slug>.md` | **Case-study content — edit these.** One file per case study |
+| `content/work/<slug>.md` | **Case-study content (edit these).** One file per case study |
 | `templates/case-study.html` | The page shell every case study is built into |
 | `build.js` | Turns each `.md` into `work/<slug>/index.html` (`npm run build`) |
 | `work/<slug>/index.html` | Generated output. It's gitignored, so don't edit it |

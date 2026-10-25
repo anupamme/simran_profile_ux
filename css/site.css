@@ -1,4 +1,4 @@
-/* Simran Chopra — UX Researcher portfolio
+/* Simran Chopra, UX Researcher portfolio
    One stylesheet for every page. Colours are tokens; dark mode follows the OS. */
 
 :root {
@@ -108,6 +108,8 @@ p { margin: 0 0 1em; }
 .hero { padding: 72px 0 48px; }
 .hero h1 { max-width: 16ch; }
 .hero .lede { font-size: clamp(1.1rem, 1.9vw, 1.3rem); color: var(--ink-2); max-width: 62ch; margin-bottom: 28px; }
+.hero .lede:last-child { margin-bottom: 0; }
+.hero + section.block { padding-top: 16px; }
 @media (max-width: 600px) { .hero { padding: 44px 0 32px; } }
 
 .stats { display: flex; flex-wrap: wrap; gap: 12px 36px; margin: 0 0 30px; padding: 0; list-style: none; }
