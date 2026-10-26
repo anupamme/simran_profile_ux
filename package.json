@@ -4,7 +4,8 @@
   "private": true,
   "description": "Simran Chopra UX Researcher portfolio. Case studies are written in content/work/*.md and built to work/<slug>/index.html.",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "build:drafts": "node build.js --drafts"
   },
   "dependencies": {
     "gray-matter": "4.0.3",

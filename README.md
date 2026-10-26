@@ -84,8 +84,9 @@ Rules:
 ### Adding a new case study
 
 1. Copy an existing `.md` in `content/work/` to `content/work/<new-slug>.md` and give it an `order`. Previous/Next links update automatically.
-2. Add any images to `images/work/`, resized with `sips -Z 1600 file.jpg`.
-3. Add its card to the "Selected case studies" grid in `index.html`. The cards are hand-written.
+2. While you write it, keep `draft: true` at the top of the front matter. Draft pages aren't published or linked, so pushing them is safe. Preview drafts locally with `npm run build:drafts`. `content/work/exchangeopoly-2.md` is a draft copy of Exchangeopoly, ready to rewrite.
+3. Add any images to `images/work/`, resized with `sips -Z 1600 file.jpg`.
+4. When it's ready, delete the `draft: true` line and add its card to the "Selected case studies" grid in `index.html`. The cards are hand-written.
 
 ## TODOs before launch
 

@@ -128,11 +128,20 @@ function renderPager(pages, i) {
 }
 
 // ---- main ----
+// `draft: true` pages are only built with --drafts (npm run build:drafts), so they never deploy.
+const INCLUDE_DRAFTS = process.argv.includes('--drafts');
+
 const pages = fs.readdirSync(CONTENT_DIR).filter((f) => f.endsWith('.md')).map((f) => {
   currentFile = `content/work/${f}`;
   const { data, content } = matter(fs.readFileSync(path.join(CONTENT_DIR, f), 'utf8'));
   for (const k of REQUIRED) if (data[k] === undefined || data[k] === '') fail(`missing front-matter field "${k}"`);
   return { file: currentFile, slug: path.basename(f, '.md'), data, body: content };
+}).filter((p) => {
+  if (!p.data.draft || INCLUDE_DRAFTS) return true;
+  // drop any page left over from an earlier --drafts build
+  fs.rmSync(path.join(ROOT, 'work', p.slug), { recursive: true, force: true });
+  console.log(`– skipped draft content/work/${p.slug}.md`);
+  return false;
 }).sort((a, b) => a.data.order - b.data.order);
 
 pages.forEach((p, i) => {
