@@ -75,22 +75,55 @@ function renderMeta(d) {
     .map((l) => ' '.repeat(8) + l).join('\n');
 }
 
-function renderHero(d) {
-  if (d.hero_image) {
-    const h = d.hero_image;
-    if (!h.src || !h.alt) fail('hero_image needs src and alt');
-    return indent(`<figure class="cs-figure">
-  <img src="${escapeHtml(imageSrc(h.src))}" alt="${escapeHtml(h.alt)}">
-${h.caption ? `  <figcaption>${inline(h.caption)}</figcaption>\n` : ''}</figure>`, 6);
+// `images:` list (older pages may still use a single `hero_image:`)
+function heroImages(d) {
+  const list = d.images ? [].concat(d.images) : d.hero_image ? [d.hero_image] : [];
+  list.forEach((img, i) => {
+    if (!img || !img.src || !img.alt) fail(`images entry ${i + 1} needs src and alt`);
+  });
+  return list;
+}
+
+const figcaption = (img) => (img.caption ? `<figcaption>${inline(img.caption)}</figcaption>` : '');
+
+// one image → full-width figure; several → carousel (js/carousel.js adds the arrows and dots)
+function renderImages(list) {
+  if (list.length === 1) {
+    const img = list[0];
+    return `<figure class="cs-figure">
+  <img src="${escapeHtml(imageSrc(img.src))}" alt="${escapeHtml(img.alt)}">
+${img.caption ? `  ${figcaption(img)}\n` : ''}</figure>`;
   }
+  const slides = list.map((img, i) =>
+    `    <figure class="carousel-slide" role="group" aria-roledescription="slide" aria-label="${i + 1} of ${list.length}">` +
+    `<img src="${escapeHtml(imageSrc(img.src))}" alt="${escapeHtml(img.alt)}"${i ? ' loading="lazy"' : ''}>${figcaption(img)}</figure>`);
+  return `<div class="carousel cs-figure" aria-roledescription="carousel" aria-label="Project images">
+  <div class="carousel-track" tabindex="0">
+${slides.join('\n')}
+  </div>
+</div>`;
+}
+
+// link previews use the first image, when it lives in images/work/
+function ogImage(d) {
+  const first = heroImages(d)[0];
+  if (!first || /^(https?:)?\/\/|^\.\.\//.test(first.src)) return '';
+  return `  <meta property="og:image" content="https://simranchopra.com/images/work/${escapeHtml(first.src)}">\n`;
+}
+
+function renderHero(d) {
+  const parts = [];
   if (d.hero_quote) {
     // one quote, or a list of two shown side by side
     const quotes = [].concat(d.hero_quote);
     if (quotes.length > 2) fail('hero_quote takes one quote or a list of two');
     const cls = quotes.length === 2 ? 'cs-typo cs-typo-pair' : 'cs-typo';
-    return indent(`<div class="${cls}">${quotes.map((q) => `<p>${inline(q)}</p>`).join('')}</div>`, 6);
+    parts.push(`<div class="${cls}">${quotes.map((q) => `<p>${inline(q)}</p>`).join('')}</div>`);
   }
-  fail('add either hero_image or hero_quote');
+  const images = heroImages(d);
+  if (images.length) parts.push(renderImages(images));
+  if (!parts.length) fail('add images, hero_quote, or both');
+  return indent(parts.join('\n'), 6);
 }
 
 function renderSections(d, body) {
@@ -133,7 +166,16 @@ const INCLUDE_DRAFTS = process.argv.includes('--drafts');
 
 const pages = fs.readdirSync(CONTENT_DIR).filter((f) => f.endsWith('.md')).map((f) => {
   currentFile = `content/work/${f}`;
-  const { data, content } = matter(fs.readFileSync(path.join(CONTENT_DIR, f), 'utf8'));
+  let parsed;
+  try {
+    parsed = matter(fs.readFileSync(path.join(CONTENT_DIR, f), 'utf8'));
+  } catch (e) {
+    // the YAML buffer starts with the newline after the opening ---, so its 0-based line + 1 is the file line
+    const line = e.mark ? ` on line ${e.mark.line + 1}` : '';
+    fail(`front matter isn't valid YAML${line}: ${e.reason || e.message}. ` +
+      'Wrap a value in "quotes" if it contains a colon or starts with [ or *.');
+  }
+  const { data, content } = parsed;
   for (const k of REQUIRED) if (data[k] === undefined || data[k] === '') fail(`missing front-matter field "${k}"`);
   return { file: currentFile, slug: path.basename(f, '.md'), data, body: content };
 }).filter((p) => {
@@ -153,7 +195,7 @@ pages.forEach((p, i) => {
     description: escapeHtml(d.description),
     og_title: escapeHtml(`${d.short_name} | Simran Chopra, UX Researcher`),
     og_description: escapeHtml(d.og_description || d.description),
-    og_image: d.hero_image ? `  <meta property="og:image" content="https://simranchopra.com/images/work/${escapeHtml(d.hero_image.src)}">\n` : '',
+    og_image: ogImage(d),
     eyebrow: inline(d.eyebrow),
     title: inline(d.title),
     lede: inline(d.lede),

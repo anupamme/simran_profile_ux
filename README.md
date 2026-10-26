@@ -58,8 +58,13 @@ meta:                             # the row of facts under the lede
 hero_quote:                       # one quote, or a list of two shown side by side
   - Can someone set up a medical diagnostics device at home …?
   - Where exactly does onboarding break down …?
-# …or a photo instead of the quote:
-# hero_image: { src: rfl-3.jpg, alt: Describe the photo, caption: Shown under it }
+images:                           # optional: 1 image = full-width photo, 2+ = carousel
+  - src: rfl-3.jpg                # file in images/work/
+    alt: Describe the photo for screen readers
+    caption: Shown under the photo   # optional
+  - src: rfl-1.jpg
+    alt: Second photo
+# A page needs hero_quote, images, or both (the quote box shows above the images).
 methods: [In-home usability testing, Task analysis]   # chips in the Methods section
 ---
 

@@ -18,10 +18,10 @@ meta:
     value: Bihar, Kenya, Indonesia; final briefing in London
   - label: Duration
     value: "2013–2014 [TODO: months]"
-hero_image:
-  src: rfl-3.jpg
-  alt: A health worker in Kenya reviewing printed immunisation card prototypes during a field test
-  caption: Concept testing of shortlisted immunisation card designs with health workers in Kenya.
+images:
+  - src: rfl-3.jpg
+    alt: A health worker in Kenya reviewing printed immunisation card prototypes during a field test
+    caption: Concept testing of shortlisted immunisation card designs with health workers in Kenya.
 methods:
   - Ethnographic field studies
   - In-depth interviews
