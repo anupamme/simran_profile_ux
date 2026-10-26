@@ -7,7 +7,7 @@ description: "Case study: in-home usability research and mixed-methods evaluatio
 
 og_description: Redesigning onboarding and retention for an at-home health device
 
-eyebrow: Inito Health Inc., Samplytics · 2014–17
+eyebrow: Inito Health Inc., Samplytics, YCombinator · 2014–17
 
 title: Redesigning onboarding and retention for an at-home health device
 
@@ -36,7 +36,7 @@ methods:
 
 ## The context
 
-Before production launch, the team needed to know where people struggled to set up and use the device at home, and what had to change so that first-time users could complete onboarding successfully. Also, understand why people stopped using fertility monitoring at home. 
+During 2016, the YCombinator funded startup was deep into research, development, and prototyping of its core optical/smartphone-attached diagnostic hardware and flat-lens technology rather than a mass-market commercial launch. Before production launch, the Inito team needed to know where people struggled to set up and use the device at home, and what had to change so that first-time users could complete onboarding successfully. Also, understand why people stopped using fertility monitoring at home. 
 
 ## My role
 
