@@ -50,9 +50,9 @@ I ran in-home usability sessions with 18 women over their ovulation cycle, in th
 I was the only researcher in the team of 14 engineers and programmers. I worked with the founders of the startup directly to implement product changes. 
 ## Key insights
 
-> Surfaced sensitive barriers to adoption: social stigma around fertility monitoring made women reluctant to use the device openly at home.
+> Sensitive barriers to adoption: social stigma around fertility monitoring made women reluctant to use the device openly at home.
 
-> Highlighted privacy risks in app notifications that could expose fertility information on shared or visible phones; informed recommendations for discreet, user-controlled alerts.
+> Privacy risks in app notifications that could expose fertility information on shared or visible phones; designed recommendations for discreet, user-controlled alerts.
 
 ## Impact
 
