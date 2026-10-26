@@ -40,7 +40,7 @@ Before production launch, the team needed to know where people struggled to set 
 
 ## My role
 
-I was instrumental in ideation and implementation of research to test the product before launch. I scoped and designed the studies and turned the findings into redesign recommendations for production. 
+Led ideation to implementation of research to test the product before launch. I scoped and designed the studies and turned the findings into redesign recommendations for production. 
 ## Methods
 
 I ran in-home usability sessions with 18 women over their ovulation cycle, in their homes, the real context of use, because a fertility hormone-related test is private, often done at a specific time of day, and done without help.
