@@ -7,7 +7,7 @@ description: "Case study: in-home usability research and mixed-methods evaluatio
 
 og_description: Redesigning onboarding and retention for an at-home health device
 
-eyebrow: Inito Health Inc., Samplytics, YCombinator · 2014–17
+eyebrow: Inito Health Inc., Samplytics, YCombinator · 2016–17
 
 title: Redesigning onboarding and retention for an at-home health device
 
