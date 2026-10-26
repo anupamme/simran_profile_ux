@@ -183,6 +183,7 @@ section.block + section.block { padding-top: 0; }
 .cs-section ul { padding-left: 1.1em; margin: 0 0 1em; }
 .cs-section li { margin-bottom: 0.4em; }
 .insight { font: 500 1.2rem/1.5 var(--serif); color: var(--ink); border-left: 3px solid var(--accent); padding-left: 18px; margin: 0 0 1em; }
+.insight + .insight { margin-top: 28px; }
 @media (max-width: 720px) { .cs-section { grid-template-columns: 1fr; gap: 10px; } }
 
 .gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 0; }
