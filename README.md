@@ -99,8 +99,8 @@ grep -rno 'class="todo">[^<]*' index.html about cv beyond
 The main gaps:
 - **Key insights** on every case study: one plain-language finding each.
 - **Soil Stories** isn't on the CV. Confirm which project it belongs to, the C&C 2025 paper, role, methods and one image.
-- **Team sizes and participant numbers** (Inito, CookUp).
-- **CookUp** Beta numbers; **Inito** onboarding baseline, if known.
+- **Team size and participant numbers** (CookUp).
+- **CookUp** Beta numbers.
 - **Images** for Exchangeopoly and Soil Stories.
 
 To hide every chip without removing them, uncomment the `.todo { display: none }` line at the top of `css/site.css`.
