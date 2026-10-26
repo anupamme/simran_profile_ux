@@ -83,7 +83,13 @@ function renderHero(d) {
   <img src="${escapeHtml(imageSrc(h.src))}" alt="${escapeHtml(h.alt)}">
 ${h.caption ? `  <figcaption>${inline(h.caption)}</figcaption>\n` : ''}</figure>`, 6);
   }
-  if (d.hero_quote) return indent(`<div class="cs-typo"><p>${inline(d.hero_quote)}</p></div>`, 6);
+  if (d.hero_quote) {
+    // one quote, or a list of two shown side by side
+    const quotes = [].concat(d.hero_quote);
+    if (quotes.length > 2) fail('hero_quote takes one quote or a list of two');
+    const cls = quotes.length === 2 ? 'cs-typo cs-typo-pair' : 'cs-typo';
+    return indent(`<div class="${cls}">${quotes.map((q) => `<p>${inline(q)}</p>`).join('')}</div>`, 6);
+  }
   fail('add either hero_image or hero_quote');
 }
 

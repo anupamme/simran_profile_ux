@@ -55,7 +55,9 @@ meta:                             # the row of facts under the lede
     value: Design Research Consultant …
   - label: Result
     value: "**89%** task completion on the redesigned onboarding"
-hero_quote: Can someone set up a medical diagnostics device at home …?
+hero_quote:                       # one quote, or a list of two shown side by side
+  - Can someone set up a medical diagnostics device at home …?
+  - Where exactly does onboarding break down …?
 # …or a photo instead of the quote:
 # hero_image: { src: rfl-3.jpg, alt: Describe the photo, caption: Shown under it }
 methods: [In-home usability testing, Task analysis]   # chips in the Methods section

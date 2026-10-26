@@ -17,7 +17,9 @@ meta:
     value: "In-situ field deployment [TODO: where (gardens, farms, homes?)]"
   - label: Published
     value: "C&C 2025 [TODO: paper title + link]"
-hero_quote: Would people care more about their soil if it could tell them a story?
+hero_quote:
+  - Would people care more about their soil if it could tell them a story?
+  - What makes a story written by an AI believable enough to act on?
 methods:
   - In-situ field deployment
   - Research-through-design probe

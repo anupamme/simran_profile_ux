@@ -18,7 +18,9 @@ meta:
     value: Blackwood Group, Timebanking UK
   - label: Context
     value: "Peoplehood: Blockchain for Social Good"
-hero_quote: How do communities decide together what to share, what it's worth, and who gets a say?
+hero_quote:
+  - How do communities decide together what to share, what it's worth, and who gets a say?
+  - How do you study group decisions as they happen, not as people remember them?
 methods:
   - Co-design sessions with users and stakeholders
   - Game-based elicitation

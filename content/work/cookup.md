@@ -17,7 +17,9 @@ meta:
     value: Indie chefs (creators and sellers) and the customers buying from them
   - label: Stage reached
     value: Beta
-hero_quote: What does an independent chef need before they can run a small food business from their own kitchen?
+hero_quote:
+  - What does an independent chef need before they can run a small food business from their own kitchen?
+  - How does a small founding team keep learning from users with every release?
 methods:
   - Creator interviews
   - Unmoderated studies

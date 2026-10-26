@@ -18,7 +18,9 @@ meta:
     value: Samsung Z1 & Tizen OS, Bixby, Samsung Health, Wearables, Samsung Fold
   - label: Recognition
     value: Samsung Excellence Award, Outstanding Project of the Year 2015 (Tizen Kiran / Samsung Z1)
-hero_quote: What does a first smartphone, and a first voice assistant, need to do for people in India, Bangladesh and Sri Lanka?
+hero_quote:
+  - What does a first smartphone, and a first voice assistant, need to do for people in India, Bangladesh and Sri Lanka?
+  - When will people trust an AI assistant enough to let it act on their behalf?
 methods:
   - Foundational field research
   - Usability testing

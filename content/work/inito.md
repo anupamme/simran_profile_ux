@@ -17,7 +17,9 @@ meta:
     value: "Inito Fertility Monitor: a smartphone-connected at-home hormone test"
   - label: Result
     value: "**89%** task completion on the redesigned onboarding"
-hero_quote: Can someone set up a medical diagnostics device at home, alone, the first time, and trust the result?
+hero_quote:
+  - Can someone set up a medical diagnostics device at home, alone, the first time, and trust the result?
+  - Where exactly does onboarding break down, and what has to change before launch?
 methods:
   - In-home usability testing
   - Task analysis

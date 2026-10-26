@@ -18,7 +18,9 @@ meta:
     value: DEFRA, Arup, UKRI; government, industry and third-sector organisations
   - label: Scale
     value: £1.6M UKRI grant, 2024–2027
-hero_quote: How do you get a government department, an engineering firm and community organisations to agree on what a city should do?
+hero_quote:
+  - How do you get a government department, an engineering firm and community organisations to agree on what a city should do?
+  - What evidence do decision-makers need before they design for communities and ecosystems, not just individual users?
 methods:
   - In-situ field deployment
   - Stakeholder interviews
