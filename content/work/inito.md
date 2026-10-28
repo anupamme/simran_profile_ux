@@ -57,4 +57,6 @@ I was the only researcher in the team of 14 engineers and programmers. I worked 
 ## Impact
 
 - Delivered redesign recommendations for the production launch through mixed-methods evaluations.
-- The redesigned onboarding flows **raised task completion from 38% to 89%** 
+- The redesigned onboarding flows **raised task completion from 38% to 89%**
+- **Press:** [Meet Inito, it puts a diagnostic lab in your pocket](https://archive.factordaily.com/inito-diagnostic-lab-bangalore/), FactorDaily, October 2016
+- **Press:** [Inito not only allows you to monitor ovulation, but also test multiple other medical conditions at home](https://sg.news.yahoo.com/inito-not-only-allows-monitor-ovulation-test-multiple-061230011.html), e27 via Yahoo News, May 2018
