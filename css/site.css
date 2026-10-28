@@ -147,11 +147,9 @@ section.block + section.block { padding-top: 0; }
 
 .beyond-teaser { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; display: flex; gap: 24px; justify-content: space-between; align-items: center; flex-wrap: wrap; }
 .beyond-teaser p { margin: 0; color: var(--ink-2); max-width: 60ch; }
-.beyond-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
-.beyond-grid .beyond-teaser { flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 12px; }
-.beyond-grid .beyond-teaser h3 { margin: 0; }
-.beyond-grid .beyond-teaser .btn { margin-top: auto; }
-@media (max-width: 760px) { .beyond-grid { grid-template-columns: 1fr; } }
+.beyond-merged { flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 12px; }
+.beyond-merged h3 { margin: 0; }
+.beyond-merged .actions { margin-top: 6px; }
 
 /* ---- Case study ---- */
 .cs-hero { padding: 56px 0 32px; }
