@@ -7,7 +7,7 @@ description: "Case study: in-home usability research and mixed-methods evaluatio
 
 og_description: Redesigning onboarding and retention for an at-home health device
 
-eyebrow: Inito Health Inc., Samplytics · 2014–17
+eyebrow: Inito Health Inc., Samplytics, YCombinator · 2016–17
 
 title: Redesigning onboarding and retention for an at-home health device
 
@@ -25,7 +25,7 @@ meta:
     value: "**89%** task completion on the redesigned onboarding"
 hero_quote:
   - Can someone set up a medical diagnostics device at home, alone, the first time, and trust the result?
-  - What are the barriers to onboarding and user retention over an ovulation cycle?
+  - What are the barriers to user onboarding and retention across an ovulation cycle?
 
 methods:
   - In-home usability testing
@@ -36,11 +36,11 @@ methods:
 
 ## The context
 
-Before production launch, the team needed to know where people struggled to set up and use the device at home, and what had to change so that first-time users could complete onboarding successfully. Also, understand retention failures associated with fertility monitoring at home. 
+During 2016, the YCombinator funded startup was deep into research, development, and prototyping of its core optical/smartphone-attached diagnostic hardware and flat-lens technology rather than a mass-market commercial launch. Before production launch, the Inito team needed to know where people struggled to set up and use the device at home, and what had to change so that first-time users could complete onboarding successfully. Also, understand why people stopped using fertility monitoring at home. 
 
 ## My role
 
-I was instrumental in ideation and implementation of research to test the product before launch. I scoped and designed the studies and turned the findings into redesign recommendations for production. 
+I led the research from ideation to implementation, testing the product before launch. I scoped and designed the studies and turned the findings into redesign recommendations for production. 
 ## Methods
 
 I ran in-home usability sessions with 18 women over their ovulation cycle, in their homes, the real context of use, because a fertility hormone-related test is private, often done at a specific time of day, and done without help.
@@ -57,4 +57,4 @@ I was the only researcher in the team of 14 engineers and programmers. I worked 
 ## Impact
 
 - Delivered redesign recommendations for the production launch through mixed-methods evaluations.
-- The redesigned onboarding flows reached **89% task completion**, which was initially at 38%
+- The redesigned onboarding flows **raised task completion from 38% to 89%** 
