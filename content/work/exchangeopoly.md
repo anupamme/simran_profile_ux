@@ -62,3 +62,6 @@ The University of Edinburgh Design Informatics team; partners Blackwood Group (a
 ## Artifacts
 
 [TODO: add one photo of the game board or a session (images/work/exchangeopoly.jpg)]
+
+![Players gathered around a red and white checkered board game table covered in food items, seen from above](appetite-1.jpg "Earlier work: Appetite (2014), a participatory game-based installation that opened up public dialogue about food choices.")
+![Players' hands moving food items across the Appetite game board](appetite-2.jpg "Earlier work: players making moves in Appetite.")

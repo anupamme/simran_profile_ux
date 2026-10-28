@@ -22,6 +22,15 @@ images:
   - src: rfl-3.jpg
     alt: A health worker in Kenya reviewing printed immunisation card prototypes during a field test
     caption: Concept testing of shortlisted immunisation card designs with health workers in Kenya.
+  - src: rfl-2.jpg
+    alt: Two participants in Kenya marking up printed card prototypes with pencils during a session
+    caption: Participants in Kenya marking up printed card prototypes.
+  - src: rfl-10.jpg
+    alt: A group of women seated around a table reviewing and annotating printed card prototypes
+    caption: A group session reviewing and annotating card prototypes.
+  - src: rfl-6.jpg
+    alt: Two Indonesian child health booklets, KMS and Buku Kesehatan Ibu dan Anak, held up during an interview
+    caption: Existing child health booklets in Indonesia, shared during an interview.
 methods:
   - Ethnographic field studies
   - In-depth interviews
@@ -68,3 +77,5 @@ The Centre for Knowledge Societies team, the Bill & Melinda Gates Foundation and
 
 ![Hands pointing at illustrated pages of an immunisation booklet during an interview](rfl-1.jpg "Walking through an existing health booklet with a participant.")
 ![A fold-out illustrated immunisation card prototype showing a child's growth stages](rfl-b1.jpg "One of the shortlisted fold-out card concepts.")
+![Hands holding a red fold-out Child Health Record prototype with a vaccination table](rfl-4.jpg "A fold-out Child Health Record prototype under review.")
+![A researcher at a whiteboard covered in sticky notes, clustering findings](rfl-b3.jpg "Synthesising field findings on a whiteboard.")

@@ -58,3 +58,6 @@ This is relevant to any team shipping AI-generated content: how tone, provenance
 ## Artifacts
 
 [TODO: add one photo of the device in use (images/work/soil-stories.jpg)]
+
+![A potted plant wired to a microcontroller, with a diagram mapping touch to visual output on a laptop](aural-physis-1.jpg "Earlier work: Aural physis, living plants made responsive to touch with sensors and a microcontroller.")
+![An IoT network architecture diagram linking plant sensors, a cloud server and user notifications](roofitarian-iot.jpg "Earlier work: Roofitarian, the sensor network design for a smart urban-farming planter.")

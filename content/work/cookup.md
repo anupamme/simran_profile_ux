@@ -53,3 +53,8 @@ My co-founders and the design, management and engineering team, plus the chefs a
 - Took the product from concept to **Beta**, with research-led directional insight at each iteration.
 - Built a research setup a small team could run continuously, so features were tested with real users before engineering effort went in.
 - [TODO: Beta numbers (chefs onboarded, orders), or what happened next]
+
+## Artifacts
+
+![An illustrated recipe page from the Community (un)cookbook](uncookbook-1.jpg "Earlier work: the Community (un)cookbook, recipes from a Facebook food community started with friends after a food residency at Khoj, New Delhi.")
+![A second illustrated recipe page from the Community (un)cookbook](uncookbook-2.jpg "Earlier work: another page from the Community (un)cookbook.")
