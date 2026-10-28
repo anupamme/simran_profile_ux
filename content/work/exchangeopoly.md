@@ -40,7 +40,7 @@ I led co-design research with marginalised communities facing social isolation i
 
 ## Methods
 
-I designed and used a variety of methods to surface needs and barriers that standard approaches would have missed. The game builds on my earlier participatory game work ([Appetite](../../beyond/#appetite), 2014), where I found that game rules lead people to act out real-world dynamics rather than describe them.
+I designed and used a variety of methods to surface needs and barriers that standard approaches would have missed. The game builds on my earlier participatory game work ([Appetite](../../beyond/appetite/), 2014), where I found that game rules lead people to act out real-world dynamics rather than describe them.
 
 ## Who I worked with
 

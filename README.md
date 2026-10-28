@@ -9,13 +9,16 @@ Case studies are written in **Markdown** and built into HTML by a small Node scr
 | Path | What it is |
 |---|---|
 | `content/work/<slug>.md` | **Case-study content (edit these).** One file per case study |
-| `templates/case-study.html` | The page shell every case study is built into |
-| `build.js` | Turns each `.md` into `work/<slug>/index.html` (`npm run build`) |
-| `work/<slug>/index.html` | Generated output. It's gitignored, so don't edit it |
-| `index.html` | Home: hero, proof bar, case-study cards, "What I bring", beyond research |
-| `about/`, `cv/`, `beyond/` | Hand-written HTML pages. `cv/` also has `simran-chopra-cv.pdf` |
+| `content/beyond/<slug>.md` | **Beyond research projects (edit these).** One file per project |
+| `templates/case-study.html`, `templates/project.html` | The page shells case studies and Beyond projects are built into |
+| `templates/beyond-index.html` | The Beyond page. The build fills in its project cards |
+| `build.js` | Builds `work/<slug>/`, `beyond/<slug>/` and `beyond/index.html` (`npm run build`) |
+| `work/`, `beyond/` output | Generated and gitignored, so don't edit it |
+| `index.html` | Home: hero, case-study cards, "What I bring", beyond research |
+| `about/`, `cv/` | Hand-written HTML pages. `cv/` also has `simran-chopra-cv.pdf` |
+| `images/work/`, `images/beyond/<slug>/` | Images for case studies and for each Beyond project |
 | `css/site.css` | The only stylesheet. Colour tokens are at the top; dark mode is automatic |
-| `js/nav.js` | Mobile menu toggle, the only script |
+| `js/nav.js`, `js/carousel.js` | Mobile menu toggle; image carousel controls |
 | `.github/workflows/pages.yml` | On every push to `main`, builds and deploys the site |
 | `404.html`, `CNAME` | For GitHub Pages |
 
@@ -92,6 +95,32 @@ Rules:
 2. While you write it, keep `draft: true` at the top of the front matter. Draft pages aren't published or linked, so pushing them is safe. Preview drafts locally with `npm run build:drafts`. `content/work/exchangeopoly-2.md` is a draft copy of Exchangeopoly, ready to rewrite.
 3. Add any images to `images/work/`, resized with `sips -Z 1600 file.jpg`.
 4. When it's ready, delete the `draft: true` line and add its card to the "Selected case studies" grid in `index.html`. The cards are hand-written.
+
+## Beyond research projects
+
+Each project on the Beyond page is a file in `content/beyond/` (imported from the old site), and each one gets its own page at `/beyond/<slug>/`. The Beyond page's cards are generated, grouped by `group`, in `order`. Front matter:
+
+```yaml
+order: 1                                  # position on the Beyond page and in Previous/Next
+group: "Food & public engagement"         # the heading it's listed under
+title: "Appetite: A Board Game on Food, with Food"
+short_name: "Appetite"                    # used in Previous/Next and the browser tab
+description: "…"                          # search and link-preview text
+summary: "…"                              # optional, the card text (otherwise a shortened description)
+images:                                   # optional, files in images/beyond/<slug>/; 2+ become a carousel
+  - src: 1.jpg
+    alt: Describe the photo
+videos: ["https://player.vimeo.com/video/135540900"]   # optional Vimeo embeds
+audio: ["https://w.soundcloud.com/player/?url=…"]      # optional SoundCloud embeds
+exhibited: ["…"]                          # optional lists, shown as sections
+papers: ["…"]
+awards: ["…"]
+links:                                    # optional
+  - label: "Report (Scribd)"
+    url: "https://www.scribd.com/…"
+```
+
+The body below the front matter is the project description in plain Markdown. To add a project, copy a file, give it a new `order` and put its images in `images/beyond/<slug>/`. It appears on the Beyond page automatically.
 
 ## TODOs before launch
 
