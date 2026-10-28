@@ -56,3 +56,5 @@ The research also looked at human–AI trust and computer-mediated communication
 - **Shipped:** the Samsung Z1 and Tizen OS launched in India, Bangladesh and Sri Lanka. The project won the **Samsung Excellence Award for Outstanding Project of the Year (2015)**.
 - **Bixby:** I translated research into design decisions within sprint cycles for Bixby's integration into Samsung phones as a context-aware assistant.
 - **Samsung Fold:** I combined market research, intercept surveys, interviews and diary studies to help define the positioning for the Fold technology and prototype.
+- **Press:** [Samsung Unveils the Samsung Z1, the First Tizen Powered Smartphone for Indian Consumers](https://news.samsung.com/in/samsung-unveils-the-samsung-z1-the-first-tizen-powered-smartphone-for-indian-consumers), Samsung Newsroom India, January 2015
+- **Press:** [Samsung Z1 sales cross 1 million mark; gold variant coming soon](https://www.gsmarena.com/samsung_z1_sales_cross_1_million_mark_gold_variant_coming_soon-news-12832.php), GSMArena, June 2015

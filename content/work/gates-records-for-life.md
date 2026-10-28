@@ -61,6 +61,8 @@ The Centre for Knowledge Societies team, the Bill & Melinda Gates Foundation and
 - Melinda Gates named CKS as one of [nine players changing the face of routine immunisation](http://www.theguardian.com/global-development-professionals-network/2014/apr/28/melinda-gates-vaccines-immunisation-list), citing Records for Life.
 - Turned the findings on digital health service uptake and barriers into recommendations for service design and institutional change. I delivered them as multimedia stories and design toolkits for audiences with different levels of research literacy.
 - [TODO: any follow-on adoption, pilots or funding]
+- **Press:** [Kids' immunization records redesigned are way more graphic, personalized & flexible](https://medcitynews.com/2014/03/redesign-vaccination-records-children/), MedCity News, March 2014. It cites the CKS focus groups in Kenya, Indonesia and India
+- **Press:** [Records for Life: Rethinking the Immunization Card](https://designobserver.com/records-for-life-rethinking-the-immunization-card), Design Observer, April 2014
 
 ## Artifacts
 

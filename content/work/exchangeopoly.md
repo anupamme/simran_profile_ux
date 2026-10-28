@@ -55,6 +55,9 @@ The University of Edinburgh Design Informatics team; partners Blackwood Group (a
 - Produced evidence on governance and community participation for the Peoplehood project.
 - Defined new ICT4D areas for digital innovation, using user-centred research and a technology-agnostic approach to innovation.
 - Created a reusable research instrument for studying collective decision-making. [TODO: publication or reuse]
+- **Paper:** [Designing Exchangeopoly: A Boardgame to Explore Value Exchange within Communities](https://doi.org/10.1145/3715336.3735436), Chopra, Everson & Vines, ACM DIS 2025
+- **Paper:** [Infrastructuring value exchange in communities through a boardgame](https://doi.org/10.1145/3666094.3666097), Chopra, Everson & Vines, PDC 2024
+- **Project page:** [Peoplehood: Designing Value Exchange in Communities](https://designinformatics.org/portfolio-item/designing-value-exchange-in-communities/), Design Informatics, University of Edinburgh
 
 ## Artifacts
 

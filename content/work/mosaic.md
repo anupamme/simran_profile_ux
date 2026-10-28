@@ -52,3 +52,5 @@ I work across policy (DEFRA), industry (Arup), third-sector organisations and ac
 
 - The field site is becoming a shared resource for project-wide methods and policy engagement.
 - [TODO: policy input, a brief it shaped, or early publications]
+- **Project page:** [MoSaIC: More-than-human sustainable and inclusive smart cities](https://gtr.ukri.org/project/7617FDA2-97CF-42C0-97F3-3FD8962A4E73), UKRI Gateway to Research
+- **Project page:** [£1.6m UKRI Future Leaders Fellowship announcement](https://www.citystgeorges.ac.uk/news-and-events/news/2023/12/city-human-computer-interaction-academic-awarded-16m-fellowship-ukri), City St George's, University of London, December 2023
