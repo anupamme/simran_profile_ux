@@ -169,6 +169,20 @@ function renderPager(pages, i, back, nextLabel) {
   return `      ${left}\n      ${right}`;
 }
 
+// `videos:` (Vimeo player URLs) and `audio:` (SoundCloud player URLs) → embedded players
+function renderEmbeds(d) {
+  const parts = [];
+  for (const url of [].concat(d.videos || [])) {
+    parts.push(`<div class="video-embed cs-figure"><iframe src="${escapeHtml(url)}" title="${escapeHtml(d.short_name)} video" ` +
+      'loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>');
+  }
+  for (const url of [].concat(d.audio || [])) {
+    parts.push(`<div class="audio-embed cs-figure"><iframe src="${escapeHtml(url)}" title="${escapeHtml(d.short_name)} audio" ` +
+      'loading="lazy" allow="autoplay"></iframe></div>');
+  }
+  return parts;
+}
+
 // ---- case studies ----
 
 function renderHero(d) {
@@ -182,7 +196,8 @@ function renderHero(d) {
   }
   const images = heroImages(d);
   if (images.length) parts.push(renderImages(images));
-  if (!parts.length) fail('add images, hero_quote, or both');
+  parts.push(...renderEmbeds(d));
+  if (!parts.length) fail('add images, hero_quote, videos or audio');
   return indent(parts.join('\n'), 6);
 }
 
@@ -247,14 +262,7 @@ function renderMedia(d) {
   const parts = [];
   const images = heroImages(d);
   if (images.length) parts.push(renderImages(images));
-  for (const url of [].concat(d.videos || [])) {
-    parts.push(`<div class="video-embed cs-figure"><iframe src="${escapeHtml(url)}" title="${escapeHtml(d.short_name)} video" ` +
-      'loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>');
-  }
-  for (const url of [].concat(d.audio || [])) {
-    parts.push(`<div class="audio-embed cs-figure"><iframe src="${escapeHtml(url)}" title="${escapeHtml(d.short_name)} audio" ` +
-      'loading="lazy" allow="autoplay"></iframe></div>');
-  }
+  parts.push(...renderEmbeds(d));
   return indent(parts.join('\n'), 6);
 }
 
