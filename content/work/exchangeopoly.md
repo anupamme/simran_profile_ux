@@ -18,8 +18,6 @@ meta:
     value: Blackwood Homes and Care (lead), Timebanking UK
   - label: Context
     value: "Peoplehood, funded by InnovateUK, in three communities across Scotland"
-  - label: Follow-on
-    value: "Blockchain for Social Good: a Cardano DApp for time-based community exchange (2023–24)"
 images:
   - src: peoplehood-board-1.jpg
     alt: Corner of the Exchangeopoly board, with wooden player counters, home squares, "AD for HELP" squares and decks of Community Event, Dilemma and House cards
@@ -73,12 +71,8 @@ Peoplehood was led by Blackwood Homes and Care and funded by InnovateUK, with Un
 - Defined new ICT4D areas for digital innovation, using user-centred research and a technology-agnostic approach to innovation.
 - Created a reusable research instrument for studying collective decision-making, published at PDC 2024 and DIS 2025 (below).
 - The insights were translated into a new application: a digital wallet for a local currency, with tokens that local people trade for access to each other's time and resources, and that track skills development and social capital.
-- **Follow-on:** the work led to [Addressing socio-technical barriers to adopting blockchains for social good](https://designinformatics.org/portfolio-item/addressing-socio-technical-barriers-to-adopting-blockchains-for-social-good/) (2023–24, Input Output Research Hub), which designed and evaluated a Cardano-based DApp that gives community members time-based currency for helping others locally, and validates identity and skills socially. A related project with the same team followed: [Tokenising Timebanking](../tokenising-timebanking/).
+- **Follow-on:** the work continued in [Tokenising Timebanking and Blockchain for Social Good](../tokenising-timebanking/), with the same team.
 - **Paper:** [Designing Exchangeopoly: A Boardgame to Explore Value Exchange within Communities](https://doi.org/10.1145/3715336.3735436), Chopra, Everson & Vines, ACM DIS 2025
 - **Paper:** [Infrastructuring value exchange in communities through a boardgame](https://doi.org/10.1145/3666094.3666097), Chopra, Everson & Vines, PDC 2024
 - **Project page:** [Peoplehood: Designing Value Exchange in Communities](https://designinformatics.org/portfolio-item/designing-value-exchange-in-communities/), Design Informatics, University of Edinburgh
 - **Project page:** [Peoplehood: Value Exchange in Later Life Communities](https://designinformatics.org/portfolio-item/peoplehood-value-exchange-in-later-life-communities/), Design Informatics, University of Edinburgh
-
-## Artifacts
-
-![A hand holding a clear acrylic token engraved "Charleston Community Token" with the number 1, over grass](blockchain-social-good.jpg "A Charleston Community Token, from the Blockchain for Social Good follow-on. Image: Design Informatics, University of Edinburgh.")
