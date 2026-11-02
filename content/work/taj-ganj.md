@@ -1,5 +1,5 @@
 ---
-order: 3.6
+order: 10
 page_title: "Taj Ganj: Taking Our Heritage Forward"
 short_name: Taj Ganj
 description: "Case study: two weeks of ethnographic fieldwork in Taj Ganj, the heritage precinct outside the Taj Mahal, feeding an integrated heritage-based development plan for the Directorate of Tourism, Uttar Pradesh."

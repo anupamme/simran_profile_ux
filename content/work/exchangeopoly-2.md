@@ -1,6 +1,6 @@
 ---
 draft: true                       # not published; preview with npm run build:drafts
-order: 8
+order: 99
 page_title: Exchangeopoly / Peoplehood
 short_name: Exchangeopoly / Peoplehood
 description: "Case study: Exchangeopoly, a board game designed as a research instrument to study collective decision-making and value exchange with socially isolated communities in Scotland (University of Edinburgh, Peoplehood project)."

@@ -1,5 +1,5 @@
 ---
-order: 5.5
+order: 7
 page_title: Tokenising Timebanking and Blockchain for Social Good
 short_name: Tokenising Timebanking
 description: "Case study: research with Timebanking UK and community members into how digital tokens and a Cardano-based DApp could help people exchange time and help locally, and cut time banks' admin (University of Edinburgh, Design Informatics)."

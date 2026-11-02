@@ -1,5 +1,5 @@
 ---
-order: 3.7
+order: 11
 page_title: Understanding Aural Life Worlds
 short_name: Aural Life Worlds
 description: "Case study: an ethnography project mapping the lived experiences and aural landscape of an ethnic group, and making sense of meaningful sounds through a visual artefact."

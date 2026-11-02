@@ -1,5 +1,5 @@
 ---
-order: 3.5
+order: 9
 page_title: "A Punjabi Palimpsest: Cultural Memory at the Aam Khas Bagh"
 short_name: A Punjabi Palimpsest
 description: "Case study: ethnography, oral history and interactive storytelling with a town in post-partition Punjab, ending in a public event at a 17th-century Mughal sarai attended by 400 people. AHRC-funded, with the University of Surrey and the British Council."

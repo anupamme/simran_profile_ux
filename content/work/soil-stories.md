@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 8
 page_title: "Soil Stories: LLM narratives from sensor data"
 short_name: Soil Stories
 description: "Case study: generative research on how people read, trust and act on LLM-generated stories drawn from live soil sensor data (C&C 2025)."
