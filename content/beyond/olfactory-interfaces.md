@@ -1,6 +1,6 @@
 ---
 order: 17
-group: "Interfaces & research through design"
+group: "Food & plant investigations"
 title: "Olfactory Interfaces"
 short_name: "Olfactory Interfaces"
 description: "It was an Interaction Design classroom project. The beginning was food which lead to exploration of olfactory interfaces, with development of a few…"

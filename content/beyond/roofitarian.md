@@ -1,6 +1,6 @@
 ---
 order: 10
-group: "Interfaces & research through design"
+group: "Food & plant investigations"
 title: "Roofitarian"
 short_name: "Roofitarian"
 description: "It is an ongoing research and development endeavour. It is in continuation of my masters thesis project where I explored food politics through self…"
