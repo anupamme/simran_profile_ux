@@ -23,6 +23,10 @@ meta:
     value: "Inito Fertility Monitor: a smartphone-connected at-home fertility hormone test"
   - label: Result
     value: "**89%** task completion on the redesigned onboarding"
+images:
+  - src: inito_cover.jpeg
+    alt: The Inito reader clipped over a smartphone's camera, with the app's fertility calendar on screen showing fertile days, period days and a Test now button
+    fit: contain
 hero_quote:
   - Can someone set up a medical diagnostics device at home, alone, the first time, and trust the result?
   - What are the barriers to user onboarding and retention across an ovulation cycle?

@@ -108,7 +108,7 @@ const figcaption = (img) => (img.caption ? `<figcaption>${inline(img.caption)}</
 function renderImages(list) {
   if (list.length === 1) {
     const img = list[0];
-    return `<figure class="cs-figure">
+    return `<figure class="cs-figure${img.fit === 'contain' ? ' contain' : ''}">
   <img src="${escapeHtml(imageSrc(img.src))}" alt="${escapeHtml(img.alt)}">
 ${img.caption ? `  ${figcaption(img)}\n` : ''}</figure>`;
   }
