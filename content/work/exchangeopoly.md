@@ -41,7 +41,7 @@ methods:
 
 ## The question
 
-Peoplehood explored how digital tools, including blockchain, could support community exchange for people facing social isolation. The team needed evidence about how these communities actually govern themselves and exchange value, and an approach that could include people whom standard research methods tend to miss.
+Peoplehood explored how digital tools could support community exchange for people facing social isolation. The team needed evidence about how these communities actually govern themselves and exchange value, and an approach that could include people whom standard research methods tend to miss.
 
 The wider project looked at the future of age-friendly neighbourhoods in three communities across Scotland. Our workstream focused on "value exchange": how people already help each other by giving time and sharing tools and resources, and whether alternative local currencies could foster volunteering, social capital and connection between older people and other generations.
 
@@ -53,7 +53,7 @@ I led co-design research with marginalised communities facing social isolation i
 
 I designed and used a variety of methods to surface needs and barriers that standard approaches would have missed. The game builds on my earlier participatory game work ([Appetite](../../beyond/appetite/), 2014), where I found that game rules lead people to act out real-world dynamics rather than describe them.
 
-Exchangeopoly adapts Monopoly: players move around a board of homes and community spaces, draw "AD for Help", Community Event and Dilemma cards, and trade tokens for each other's time and help. Alongside design probes and workshops, it was used as a method to surface tacit knowledge and social structures within communities.
+Exchangeopoly adapts Monopoly: players move around a board of homes and community spaces, draw "AD for Help", Community Event and Dilemma cards, and exchange time and help with each other. Alongside design probes and workshops, it was used as a method to surface tacit knowledge and social structures within communities.
 
 ## Who I worked with
 
@@ -70,8 +70,6 @@ Peoplehood was led by Blackwood Homes and Care and funded by InnovateUK, with Un
 - Produced evidence on governance and community participation for the Peoplehood project.
 - Defined new ICT4D areas for digital innovation, using user-centred research and a technology-agnostic approach to innovation.
 - Created a reusable research instrument for studying collective decision-making, published at PDC 2024 and DIS 2025 (below).
-- The insights were translated into a new application: a digital wallet for a local currency, with tokens that local people trade for access to each other's time and resources, and that track skills development and social capital.
-- **Follow-on:** the work continued in [Tokenising Timebanking and Blockchain for Social Good](../tokenising-timebanking/), with the same team.
 - **Paper:** [Designing Exchangeopoly: A Boardgame to Explore Value Exchange within Communities](https://doi.org/10.1145/3715336.3735436), Chopra, Everson & Vines, ACM DIS 2025
 - **Paper:** [Infrastructuring value exchange in communities through a boardgame](https://doi.org/10.1145/3666094.3666097), Chopra, Everson & Vines, PDC 2024
 - **Project page:** [Peoplehood: Designing Value Exchange in Communities](https://designinformatics.org/portfolio-item/designing-value-exchange-in-communities/), Design Informatics, University of Edinburgh
